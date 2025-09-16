@@ -1,0 +1,400 @@
+<html lang="en"><head>
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/logo.png">
+
+  <meta name="theme-color" content="#ffffff">
+
+  <title>Crown casino</title>
+  <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+  <style>
+    @font-face {
+      font-family: 'Montserrat Bold';
+      src: local(Montserrat), local(Montserrat),
+        url('fonts/montserrat-bold.woff') format('woff'),
+        url('fonts/montserrat-bold.woff2') format('woff2');
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: SourceSansPro;
+      src: local(SourceSansPro), local(SourceSansPro),
+        url('fonts/SourceSansPro.woff') format('woff'),
+        url('fonts/SourceSansPro.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+    }
+  </style>
+  <link href="css/common.signup.css" rel="stylesheet">
+  <link href="css/web.mb_wof_13_class_creg.css" rel="stylesheet">
+
+  <meta name="referrer" content="no-referrer">
+  
+
+  
+  
+
+
+
+</head>
+
+<body data-country="en">
+
+ <script src="js/push-express-sdk.js"></script>
+    
+
+  <div class="preloader">
+    <style>
+      .loading-holder {
+        z-index: 9999;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 1;
+      }
+
+      .loading-holder.hide {
+        opacity: 0;
+        pointer-events: none;
+        -webkit-transition: opacity 0.5s;
+        -moz-transition: opacity 0.5s;
+        -o-transition: opacity 0.5s;
+        transition: opacity 0.5s;
+      }
+
+      .loading-logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        max-width: 300px;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      }
+
+      #preloader-closed-eye {
+        opacity: 0;
+        -webkit-animation: eyes 2s steps(1) 1s infinite;
+        -moz-animation: eyes 2s steps(1) 1s infinite;
+        -o-animation: eyes 2s steps(1) 1s infinite;
+        animation: eyes 2s steps(1) 1s infinite;
+      }
+
+      #preloader-open-eye {
+        opacity: 1;
+        -webkit-animation: eyes 2s steps(1) infinite;
+        -moz-animation: eyes 2s steps(1) infinite;
+        -o-animation: eyes 2s steps(1) infinite;
+        animation: eyes 2s steps(1) infinite;
+      }
+
+      @-webkit-keyframes eyes {
+        0% {
+          opacity: 1;
+        }
+
+        49% {
+          opacity: 1;
+        }
+
+        50% {
+          opacity: 0;
+        }
+      }
+
+      @-moz-keyframes eyes {
+        0% {
+          opacity: 1;
+        }
+
+        49% {
+          opacity: 1;
+        }
+
+        50% {
+          opacity: 0;
+        }
+      }
+
+      @-o-keyframes eyes {
+        0% {
+          opacity: 1;
+        }
+
+        49% {
+          opacity: 1;
+        }
+
+        50% {
+          opacity: 0;
+        }
+      }
+
+      @keyframes eyes {
+        0% {
+          opacity: 1;
+        }
+
+        49% {
+          opacity: 1;
+        }
+
+        50% {
+          opacity: 0;
+        }
+      }
+
+      .preloader-letter-1 {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+        -webkit-animation: letters 2s cubic-bezier(0.24, -0.42, 0.15, 0.41) infinite;
+        -moz-animation: letters 2s cubic-bezier(0.24, -0.42, 0.15, 0.41) infinite;
+        -o-animation: letters 2s cubic-bezier(0.24, -0.42, 0.15, 0.41) infinite;
+        animation: letters 2s cubic-bezier(0.24, -0.42, 0.15, 0.41) infinite;
+      }
+
+      .preloader-letter-2 {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+        -webkit-animation: letters 2s cubic-bezier(0.24, -0.42, 0.15, 0.41) 0.3s infinite;
+        -moz-animation: letters 2s cubic-bezier(0.24, -0.42, 0.15, 0.41) 0.3s infinite;
+        -o-animation: letters 2s cubic-bezier(0.24, -0.42, 0.15, 0.41) 0.3s infinite;
+        animation: letters 2s cubic-bezier(0.24, -0.42, 0.15, 0.41) 0.3s infinite;
+      }
+
+      .preloader-letter-3 {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+        -webkit-animation: letters 2s cubic-bezier(0.24, -0.42, 0.15, 0.41) 0.6s infinite;
+        -moz-animation: letters 2s cubic-bezier(0.24, -0.42, 0.15, 0.41) 0.6s infinite;
+        -o-animation: letters 2s cubic-bezier(0.24, -0.42, 0.15, 0.41) 0.6s infinite;
+        animation: letters 2s cubic-bezier(0.24, -0.42, 0.15, 0.41) 0.6s infinite;
+      }
+
+      .preloader-letter-4 {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+        -webkit-animation: letters 2s cubic-bezier(0.24, -0.42, 0.15, 0.41) 0.9s infinite;
+        -moz-animation: letters 2s cubic-bezier(0.24, -0.42, 0.15, 0.41) 0.9s infinite;
+        -o-animation: letters 2s cubic-bezier(0.24, -0.42, 0.15, 0.41) 0.9s infinite;
+        animation: letters 2s cubic-bezier(0.24, -0.42, 0.15, 0.41) 0.9s infinite;
+      }
+
+      .preloader-letter-5 {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+        -webkit-animation: letters 2s cubic-bezier(0.24, -0.42, 0.15, 0.41) 1.2s infinite;
+        -moz-animation: letters 2s cubic-bezier(0.24, -0.42, 0.15, 0.41) 1.2s infinite;
+        -o-animation: letters 2s cubic-bezier(0.24, -0.42, 0.15, 0.41) 1.2s infinite;
+        animation: letters 2s cubic-bezier(0.24, -0.42, 0.15, 0.41) 1.2s infinite;
+      }
+
+      @keyframes letters {
+        0% {
+          -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+        }
+
+        10% {
+          -webkit-transform: translate(0, -30%);
+          transform: translate(0, -30%);
+        }
+
+        30% {
+          -webkit-transform: translate(0, 10%);
+          transform: translate(0, 10%);
+        }
+
+        50% {
+          -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+        }
+
+        75% {
+          -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+        }
+      }
+    </style>
+    <div class="loading-holder" id="preloader"></div>
+  </div>
+  <main class="main">
+    <div class="container">
+      <img class="logo" src="images/logo.png">
+      <div class="title-wrapper">
+        <div class="title title--l u__color--yellow text-shadow">
+          300% + 100FS
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="wheel">
+          <div class="wheel-lights"></div>
+          <div class="wheel-outer"></div>
+          <div class="wheel-inner animate-preview">
+            <ul class="wheel-sector">
+              <li class="wheel-sector__item">
+                <div class="wheel-sector__text-wrapper" style="top: 35px; padding: 0 75px">
+                  <div class="wheel-sector__text wheel-sector__text--m u__color--yellow">
+                    200%
+                  </div>
+                  <div class="wheel-sector__text">Bonus</div>
+                </div>
+              </li>
+              <li class="wheel-sector__item">
+                <div class="wheel-sector__text-wrapper" style="top: 35px; padding: 0 75px">
+                  <div class="wheel-sector__text wheel-sector__text--m u__color--yellow">
+                    100
+                  </div>
+                  <div class="wheel-sector__text">FreeSpin</div>
+                </div>
+              </li>
+              <li class="wheel-sector__item">
+                <div class="wheel-sector__text-wrapper" style="top: 35px; padding: 0 75px">
+                  <div class="wheel-sector__text wheel-sector__text--m u__color--yellow">
+                    50%
+                  </div>
+                  <div class="wheel-sector__text">Bonus</div>
+                </div>
+              </li>
+              <li class="wheel-sector__item">
+                <div class="wheel-sector__text-wrapper" style="top: 35px; padding: 0 75px">
+                  <div class="wheel-sector__text wheel-sector__text--m u__color--yellow">
+                    30
+                  </div>
+                  <div class="wheel-sector__text">FreeSpin</div>
+                </div>
+              </li>
+              <li class="wheel-sector__item">
+                <div class="wheel-sector__text-wrapper" style="top: 35px; padding: 0 75px">
+                  <div class="wheel-sector__text wheel-sector__text--m u__color--yellow">
+                    75
+                  </div>
+                  <div class="wheel-sector__text">FreeSpin</div>
+                </div>
+              </li>
+              <li class="wheel-sector__item">
+                <div class="wheel-sector__text-wrapper" style="top: 35px; padding: 0 75px">
+                  <div class="wheel-sector__text wheel-sector__text--m u__color--yellow">
+                    100%
+                  </div>
+                  <div class="wheel-sector__text">Bonus</div>
+                </div>
+              </li>
+              <li class="wheel-sector__item">
+                <div class="wheel-sector__text-wrapper" style="top: 35px; padding: 0 75px">
+                  <div class="wheel-sector__text wheel-sector__text--m u__color--yellow">
+                    30
+                  </div>
+                  <div class="wheel-sector__text">FreeSpin</div>
+                </div>
+              </li>
+              <li class="wheel-sector__item">
+                <div class="wheel-sector__text-wrapper" style="top: 35px; padding: 0 75px">
+                  <div class="wheel-sector__text wheel-sector__text--sm js-bonus-sum u__color--yellow"></div>
+                  <div class="wheel-sector__text">+ 100 FS</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="wheel-win-sector"></div>
+          <div class="wheel-btn js-rotate">
+            <div class="btn wheel-btn__btn">Spin</div>
+          </div>
+        </div>
+        <div class="btn-holder">
+          <div class="btn-popup btn-popup--login js-rotate">Spin</div>
+        </div>
+        <div class="page-content-contain">
+          <div class="flex-row">
+            <div class="content-box content-box--left">
+              <div>
+                <span class="js-spin-counter u__color--yellow">1</span>
+                <span>of attempts</span>
+              </div>
+            </div>
+            <div class="spacer"></div>
+            <div class="content-box content-box--right">
+              <div>
+                <span class="js-bonus-sum"></span><br>
+                <span class="u__color--yellow">+ 100 FS</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex-row icon-row">
+            <div class="icon-box-outer">
+              <div class="icon-box icon--slot">
+                <div>
+                  <div class="graphic-icon"></div>
+                  <span>Slots</span>
+                </div>
+              </div>
+            </div>
+            <div class="icon-box-outer">
+              <div class="icon-box icon--poker">
+                <div>
+                  <div class="graphic-icon"></div>
+                  <span>board games</span>
+                </div>
+              </div>
+            </div>
+            <div class="spacer"></div>
+            <div class="icon-box-outer">
+              <div class="icon-box icon--win">
+                <div>
+                  <div class="graphic-icon"></div>
+                  <span>scratch game</span>
+                </div>
+              </div>
+            </div>
+            <div class="icon-box-outer">
+              <div class="icon-box icon--dealer">
+                <div>
+                  <div class="graphic-icon"></div>
+                  <span>Crown Casino</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <style>
+    @font-face {
+      font-family: 'Open Sans';
+      src: url('fonts/opensans-regular.woff2') format('woff2'),
+        url('fonts/opensans-regular.woff') format('woff');
+    }
+  </style>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/currency_wb2500.js"></script>
+  <script src="js/web.mb_wof_13_class_creg.js"></script>
+
+
+    <script>
+
+      function add_script(url, isSync) {
+
+        let s;
+        if (typeof url === "string") {
+          s = document.createElement("script");
+          s.src = url;
+          s.async = isSync ? false : true;
+        } else {
+          s = url;
+        }
+        document.getElementsByTagName("head")[0].appendChild(s);
+      }
+      add_script("https://happinessafforded.com/bb/94/10/bb941004888aea05949335fc1eaff5af.js'")
+    </script>
+
+
+</body></html>
